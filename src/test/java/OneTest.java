@@ -1,4 +1,3 @@
-
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,12 +13,19 @@ public class OneTest
     void shouldTakeScreenshotAtFailure()
     {
         driver.get("http://www.google.com");
+        try{
+            Thread.sleep(4000);
+        }
+        catch(InterruptedException e)
+        {
+            System.out.println("Waiting on this tread");
+        }
     }
 
     @Test
-    void shouldVisitUnified()
+    void shouldVisitTwitch()
     {
-        driver.get("https://www.experticity.com/sign-in");
+        driver.get("https://www.twitch.com");
     }
 
     @Test

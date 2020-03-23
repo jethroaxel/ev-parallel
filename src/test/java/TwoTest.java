@@ -14,13 +14,13 @@ public class TwoTest
     void shouldTakeScreenshotAtFailure()
     {
         try{
-            Thread.sleep(1500);
+            Thread.sleep(10000);
         }
         catch(InterruptedException e)
         {
             System.out.println("Waiting on this tread");
         }
-        driver.get("http://www.google.com");
+        driver.get("http://www.facebook.com");
     }
 
     @Test
@@ -37,9 +37,16 @@ public class TwoTest
     }
 
     @Test
-    void shouldVisitMarketerWeb()
+    void shouldVisitCnn()
     {
-        driver.get("https://advocacy.experticity.com/sign-in");
+        driver.get("https://cnn.com");
+        try{
+            Thread.sleep(8000);
+        }
+        catch(InterruptedException e)
+        {
+            System.out.println("Waiting on this tread");
+        }
     }
 
 

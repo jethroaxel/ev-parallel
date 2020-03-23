@@ -1,3 +1,4 @@
 .idea/
 ev-parallel.iml
 target/
+.DS_Store
